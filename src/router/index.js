@@ -13,13 +13,8 @@ export default new Router({
             path: '/',
             component: resolve => require(['../components/common/Home.vue'], resolve),
             meta: { title: '自述文件' },
-            children:[
-                 //搜索模块
-                {
-                    path: '/search',
-                    component: resolve => require(['../components/page/Search.vue'], resolve),
-                    meta: { title: '知识搜索模块' }
-                },
+            children: [
+
 
 
                 // 知识图谱管理 kgManage
@@ -40,8 +35,8 @@ export default new Router({
                 },
 
 
-                 //表示学习运用
-                 {
+                //表示学习运用
+                {
                     path: '/linkPrediction',
                     component: resolve => require(['../components/page/EmbeddingApp/linkPrediction.vue'], resolve),
                     meta: { title: '链接预测' }
@@ -56,9 +51,14 @@ export default new Router({
                     component: resolve => require(['../components/page/EmbeddingApp/questionAndAnswer.vue'], resolve),
                     meta: { title: '知识问答' }
                 },
-                
+
 
                 // 电磁态势分析
+                {
+                    path: '/search',
+                    component: resolve => require(['../components/page/ElectromagneticApp/kownledgeSearch.vue'], resolve),
+                    meta: { title: '知识搜索模块' }
+                },
                 {
                     path: '/entityRelationship',
                     component: resolve => require(['../components/page/ElectromagneticApp/entityRelationship.vue'], resolve),
