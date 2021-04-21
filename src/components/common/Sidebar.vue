@@ -47,7 +47,7 @@ export default {
         {
           icon: "el-icon-tickets",
           index: "2",
-          title: "知识图谱管理",
+          title: "电磁态势知识图谱管理",
           subs: [
             {
               index: "tripleUpload",
@@ -66,7 +66,7 @@ export default {
         {
           icon: "el-icon-star-on",
           index: "3",
-          title: "表示学习运用",
+          title: "电磁知识图谱表示学习运用",
           subs: [
             {
               index: "linkPrediction",
@@ -77,19 +77,13 @@ export default {
               index: "tripleClassification",
               title: "三元组分类",
             },
-
-            {
-              icon: "el-icon-star-on",
-              index: "questionAndAnswer",
-              title: "知识问答",
-            },
           ],
         },
 
         {
           icon: "el-icon-rank",
           index: "4",
-          title: "电磁态势分析",
+          title: "电磁态势数据分析",
           subs: [
             {
               icon: "el-icon-setting",

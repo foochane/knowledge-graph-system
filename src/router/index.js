@@ -46,11 +46,6 @@ export default new Router({
                     component: resolve => require(['../components/page/EmbeddingApp/tripleClassification.vue'], resolve),
                     meta: { title: '三元组分类' }
                 },
-                {
-                    path: '/questionAndAnswer',
-                    component: resolve => require(['../components/page/EmbeddingApp/questionAndAnswer.vue'], resolve),
-                    meta: { title: '知识问答' }
-                },
 
 
                 // 电磁态势分析
