@@ -25,3 +25,9 @@ hs_err_pid*
 node_modules/
 dist/
 .idea/
+target/
+
+*.iws
+*.iml
+*.ipr
+
