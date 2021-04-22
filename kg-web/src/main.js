@@ -7,12 +7,6 @@ import 'element-ui/lib/theme-chalk/index.css';    // 默认主题
 // import '../static/css/theme-green/index.css';       // 浅绿色主题
 import "babel-polyfill";
 
-//接口调用fc
-// 引用API文件
-import api from './api/index.js'
-// 将API方法绑定到全局
-Vue.prototype.$api = api
-///
 
 
 Vue.use(ElementUI, { size: 'small' });

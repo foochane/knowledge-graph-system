@@ -15,9 +15,9 @@ module.exports = {
           // target:'http://jsonplaceholder.typicode.com',
           target:'http://localhost:8080/',   //接口地址
           changeOrigin:true,
-          pathRewrite:{
-              '/api':''
-          }
+          // pathRewrite:{
+          //     '/api':''
+          // }
       },
       '/ms':{
           // target: 'https://www.easy-mock.com/mock/592501a391470c0ac1fab128',
