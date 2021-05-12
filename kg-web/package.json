@@ -12,9 +12,11 @@
   "dependencies": {
     "axios": "^0.15.3",
     "babel-polyfill": "^6.23.0",
+    "d3": "^5.16.0",
     "echarts": "^5.0.2",
     "echarts-stat": "^1.2.0",
     "element-ui": "2.3.3",
+    "jquery": "^3.5.1",
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
     "mavon-editor": "^2.5.4",

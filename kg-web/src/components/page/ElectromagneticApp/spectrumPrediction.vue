@@ -37,7 +37,7 @@ export default {
       this.$axios.get("/api/electromagnetic/predict", {page: this.cur_page}).then((res) => {
           console.log(res.data);
           myChart.setOption(res.data);
-     
+
       });
     },
 
@@ -49,7 +49,7 @@ export default {
       this.$axios.get("/api/band/list", {page: this.cur_page}).then((res) => {
           console.log(res.data);
           myChart.setOption(res.data);
-     
+
       });
     },
   },
