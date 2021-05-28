@@ -1,36 +1,6 @@
  <template>
     <div>
         <el-row :gutter="20">
-            <!-- <el-col :span="8">
-                <el-row>
-                    <el-col>
-                        <el-card shadow="hover" class="mgb20">
-                            <div class="user-info">
-                                <img src="static/img/img.jpg" class="user-avator" alt="">
-                                <div class="user-info-cont">
-                                    <div class="user-info-name">{{name}}</div>
-                                    <div>{{role}}</div>
-                                </div>
-                            </div>
-                            <div class="user-info-list">上次登录时间：<span>2019-08-01</span></div>
-                            <div class="user-info-list">上次登录地点：<span>成都</span></div>
-                        </el-card>
-                        <el-card shadow="hover">
-                            <div slot="header" class="clearfix">
-                                <span>语言详情</span>
-                            </div>
-                            Vue
-                            <el-progress :percentage="57.2" color="#42b983"></el-progress>
-                            JavaScript
-                            <el-progress :percentage="29.8" color="#f1e05a"></el-progress>
-                            CSS
-                            <el-progress :percentage="11.9"></el-progress>
-                            HTML
-                            <el-progress :percentage="1.1" color="#f56c6c"></el-progress>
-                        </el-card>
-                    </el-col>
-                </el-row>
-            </el-col> -->
             <el-col :span="16">
                 <el-row :gutter="20" class="mgb20">
                     <el-col :span="8">
@@ -38,7 +8,7 @@
                             <div class="grid-content grid-con-1">
                                 <i class="el-icon-more grid-con-icon"></i>
                                 <div class="grid-cont-right">
-                                    <div class="grid-num">1234</div>
+                                    <div class="grid-num">7000</div>
                                     <div>三元组数量</div>
                                 </div>
                             </div>
@@ -49,7 +19,7 @@
                             <div class="grid-content grid-con-2">
                                 <i class="el-icon-success grid-con-icon"></i>
                                 <div class="grid-cont-right">
-                                    <div class="grid-num">2543</div>
+                                    <div class="grid-num">5439</div>
                                     <div>实体数量</div>
                                 </div>
                             </div>
@@ -60,7 +30,7 @@
                             <div class="grid-content grid-con-3">
                                 <i class="el-icon-star-on grid-con-icon"></i>
                                 <div class="grid-cont-right">
-                                    <div class="grid-num">443</div>
+                                    <div class="grid-num">2432</div>
                                     <div>关系数量</div>
                                 </div>
                             </div>
@@ -105,26 +75,26 @@
                 name: localStorage.getItem('ms_username'),
                 todoList: [
                     {
-                        title: '2021-3-15: 添加三元组<实体1，关系1，实体1>',
+                        title: '2021-3-15: 添加三元组<电磁波，提出时间，1865年>',
                         status: false,
                     },
                     {
-                        title: '2021-3-15: 添加三元组<实体1，关系1，实体1>',
+                        title: '2021-3-15: 添加三元组<电磁波，包含，红外线>',
                         status: false,
                     },
                     {
-                        title: '2021-3-15: 添加三元组<实体1，关系1，实体1>',
+                        title: '2021-3-15: 添加三元组<电磁波，包含，无线电波>',
                         status: false,
                     }, {
-                        title: '2021-3-15: 添加三元组<实体1，关系1，实体1>',
+                        title: '2021-3-15: 添加三元组<电磁波，包含，微波>',
                         status: false,
                     },
                     {
-                        title: '2021-3-15: 添加三元组<实体1，关系1，实体1>',
+                        title: '2021-3-15: 添加三元组<电磁波，提出者，詹姆斯·克拉克·麦克斯韦>',
                         status: false,
                     },
                     {
-                        title: '2021-3-15: 添加三元组<实体1，关系1，实体1>',
+                        title: '2021-3-15: 添加三元组<电磁波，证实者，赫兹>',
                         status: false,
                     }
                 ]

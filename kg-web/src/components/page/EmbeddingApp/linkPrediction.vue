@@ -10,9 +10,9 @@
       </el-breadcrumb>
     </div>
     <div class="container">
-      <div class="content-title">实体链接</div>
+      <div class="content-title">链接预测</div>
       <div class="plugins-tips">
-        请输入需要链接预测的三元组，空缺的部分用？表示，实例：（？,r,t）,（h,？,t）,（h,r,？）
+        请输入需要链接预测的三元组，空缺的部分用？表示，实例：（?,r,t）,（h,?,t）,（h,r,?）
       </div>
 
       <div class="form-box">
@@ -28,19 +28,14 @@
           </el-form-item>
 
           <el-form-item>
-            <el-button type="primary" @click="onSubmit">实体链接</el-button>
+            <el-button type="primary" @click="onSubmit">链接预测</el-button>
             <el-button>取消</el-button>
           </el-form-item>
         </el-form>
       </div>
 
-      <div class="content-title">实体链接预测结果排序：</div>
-      <div class="plugins-tips">1.预测结果1</div>
-      <div class="plugins-tips">2.预测结果1</div>
-      <div class="plugins-tips">3.预测结果1</div>
-      <div class="plugins-tips">4.预测结果1</div>
-      <div class="plugins-tips">5.预测结果1</div>
-      <div class="plugins-tips">5.预测结果1</div>
+      <div class="content-title">链接预测结果：</div>
+      <div class="plugins-tips">詹姆斯·克拉克·麦克斯韦</div>
     </div>
   </div>
 </template>
@@ -58,9 +53,9 @@ export default {
       dialogVisible: false,
 
       form: {
-        name1: "",
-        name2: "",
-        name3: "",
+        name1: "电磁波",
+        name2: "提出者",
+        name3: "?",
       },
     };
   },

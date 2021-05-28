@@ -9,7 +9,17 @@
       </el-breadcrumb>
     </div>
 
-    <div>
+
+    <div  class="container">
+
+        <el-form>
+            <el-form-item>
+                <input type="text" ref="getValue" />
+                <el-button type="primary"  @click="submitButton">搜索</el-button>
+            </el-form-item>
+
+        </el-form>
+
       <div style="height: calc(100vh - 50px)">
         <SeeksRelationGraph
           ref="seeksRelationGraph"
@@ -18,14 +28,6 @@
           :on-line-click="onLineClick"
         />
       </div>
-      <el-button type="success" class="c-show-code-button"
-        ><el-link
-          href="https://github.com/seeksdream/relation-graph/blob/master/doc/demo/Demo4LayoutCenter.vue"
-          target="_blank"
-          style="color: #ffffff"
-          >查看代码</el-link
-        ></el-button
-      >
     </div>
   </div>
 </template>
@@ -61,6 +63,10 @@ export default {
     this.showSeeksGraph();
   },
   methods: {
+
+      submitButton(){
+          console.log(this.$refs.getValue.value)
+      },
     showSeeksGraph(query) {
       var __graph_json_data = {
         rootId: "2",
@@ -99,6 +105,34 @@ export default {
           { from: "活动规律", to: "航迹航道", text: "包含" },
           { from: "航母", to: "载舰机", text: "搭载" },
         ],
+        // nodes: [
+        //   { id: "2020年9月1日", name: "2020年9月1日", color: "#43a2f1" },
+        //   { id: "-97.23", name: "-97.23", color: "#55a2f1" },
+        //   { id: "2020年9月2日", name: "2020年9月2日", color: "#43a2f1" },
+        //   { id: "-54.23", name: "-54.23", color: "#55a2f1" },
+        //   { id: "2020年9月3日", name: "2020年9月3日", color: "#43a2f1" },{ id: "-18.23", name: "-18.23", color: "#55a2f1" },
+
+        //   { id: "2020年9月4日", name: "2020年9月4日", color: "#43a2f1" },{ id: "-54.12", name: "-54.12", color: "#55a2f1" },
+        //   { id: "2020年9月5日", name: "2020年9月5日", color: "#43a2f1" },{ id: "-19.25", name: "-19.25", color: "#55a2f1" },
+        //   { id: "2020年9月6日", name: "2020年9月6日", color: "#43a2f1" },{ id: "-78.56", name: "-78.56", color: "#55a2f1" },
+        //   { id: "2020年9月7日", name: "2020年9月7日", color: "#43a2f1" },{ id: "-37.35", name: "-37.35", color: "#55a2f1" },
+        //   { id: "2020年9月8日", name: "2020年9月8日", color: "#43a2f1" },{ id: "-44.77", name: "-44.77", color: "#55a2f1" },
+        //   { id: "2020年9月9日", name: "2020年9月9日", color: "#43a2f1" },{ id: "-38.42", name: "-38.42", color: "#55a2f1" },
+        //   { id: "2020年9月10日", name: "2020年9月10日", color: "#43a2f1" },{ id: "-48.63", name: "-48.63", color: "#55a2f1" },
+        // ],
+        // links: [
+        //   { from: "2020年9月1日", to: "-97.23", text: "频管中心幅度" },
+        //   { from: "2020年9月2日", to: "-54.23", text: "频管中心幅度" },
+        //   { from: "2020年9月3日", to: "-18.23", text: "频管中心幅度" },
+        //   { from: "2020年9月4日", to: "-54.12", text: "频管中心幅度" },
+        //   { from: "2020年9月5日", to: "-19.25", text: "频管中心幅度" },
+        //   { from: "2020年9月6日", to: "-78.56", text: "频管中心幅度" },
+        //   { from: "2020年9月7日", to: "-37.35", text: "频管中心幅度" },
+        //   { from: "2020年9月8日", to: "-44.77", text: "频管中心幅度" },
+        //   { from: "2020年9月9日", to: "-38.42", text: "频管中心幅度" },
+        //   { from: "2020年9月10日", to: "-48.63", text: "频管中心幅度" },
+
+        // ],
       };
       this.$refs.seeksRelationGraph.setJsonData(
         __graph_json_data,

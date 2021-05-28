@@ -3,11 +3,11 @@
         <div class="crumbs">
             <el-breadcrumb separator="/">
                 <el-breadcrumb-item><i class="el-icon-lx-calendar"></i> 知识图谱管理</el-breadcrumb-item>
-                <el-breadcrumb-item>三元组上传</el-breadcrumb-item>
+                <el-breadcrumb-item>三元组添加</el-breadcrumb-item>
             </el-breadcrumb>
         </div>
         <div class="container">
-            <div class="content-title">文件形式上传</div>
+            <div class="content-title">文件形式添加</div>
             <div class="plugins-tips">
                 选择三元组文件，支持txt、csv格式文件
             </div>
@@ -20,9 +20,9 @@
                 <div class="el-upload__text">将文件拖到此处，或<em>点击上传</em></div>
                 <div class="el-upload__tip" slot="tip">支持拖拽上传</div>
             </el-upload>
-            <div class="content-title">手动上传</div>
+            <div class="content-title">手动添加</div>
             <div class="plugins-tips">
-                填写三元组手动上传的知识图谱中
+                填写三元组添加到知识图谱
             </div>
 
 
@@ -40,7 +40,7 @@
                     
 
                     <el-form-item>
-                        <el-button type="primary" @click="onSubmit">表单提交</el-button>
+                        <el-button type="primary" @click="onSubmit">添加三元组</el-button>
                         <el-button>取消</el-button>
                     </el-form-item>
                 </el-form>

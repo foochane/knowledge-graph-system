@@ -32,8 +32,8 @@
         </el-form>
       </div>
 
-      <div class="content-title">三元组分类结果</div>
-      <div class="plugins-tips">正三元组概率：90%</div>
+      <div class="content-title">三元组分类结果：</div>
+      <div class="plugins-tips" >是正三元组</div>
     </div>
   </div>
 </template>
@@ -51,9 +51,9 @@ export default {
       dialogVisible: false,
 
       form: {
-        name1: "",
-        name2: "",
-        name3: "",
+        name1: "电磁波",
+        name2: "包含",
+        name3: "红外线",
       },
     };
   },

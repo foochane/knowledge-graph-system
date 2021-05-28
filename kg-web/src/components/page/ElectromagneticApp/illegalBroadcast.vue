@@ -78,7 +78,7 @@ export default {
           {
             name: "非法词数量",
             type: "bar",
-            data: [5, 20, 36, 1, 10, 16, 36, 24, 10, 20],
+            data: [34, 20, 4, 24, 1, 16, 36, 2, 19, 20],
           },
         ],
       });
@@ -122,6 +122,8 @@ export default {
           color: COLOR_ALL[i],
         });
       }
+
+      console.log(pieces)
       // 绘制图表
       myChart.setOption({
         dataset: [

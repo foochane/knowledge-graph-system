@@ -3,43 +3,43 @@
         <div id="gid_tc" style="float:left;">
             <div id="gid"></div>
         </div>
-        <div class="svg-set-box clearfix">
-            <div class="ctwh-dibmr" style="float: right">
-                <ul class="toolbar">
-                    <li>
-                        <a href="javascript:;" @click="zoomIn"
-                        ><span><i class="el-icon-zoom-in"></i>放大</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="javascript:;" @click="zoomOut"
-                        ><span><i class="el-icon-zoom-out"></i>缩小</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="javascript:;" @click="refresh"
-                        ><span><i class="el-icon-refresh-right"></i>还原</span></a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            v-if="!isFullscreen"
-                            href="javascript:;"
-                            @click="showFull"
-                        >
-                            <span><i class="el-icon-full-screen"></i>全屏</span>
-                        </a>
-                        <a
-                            v-else
-                            href="javascript:;"
-                            @click="exitFullScreen"
-                        >
-                            <span><i class="el-icon-full-screen"></i>退出全屏</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+<!--        <div class="svg-set-box clearfix">-->
+<!--            <div class="ctwh-dibmr" style="float: right">-->
+<!--                <ul class="toolbar">-->
+<!--                    <li>-->
+<!--                        <a href="javascript:;" @click="zoomIn"-->
+<!--                        ><span><i class="el-icon-zoom-in"></i>放大</span></a-->
+<!--                        >-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="javascript:;" @click="zoomOut"-->
+<!--                        ><span><i class="el-icon-zoom-out"></i>缩小</span></a-->
+<!--                        >-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="javascript:;" @click="refresh"-->
+<!--                        ><span><i class="el-icon-refresh-right"></i>还原</span></a-->
+<!--                        >-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a-->
+<!--                            v-if="!isFullscreen"-->
+<!--                            href="javascript:;"-->
+<!--                            @click="showFull"-->
+<!--                        >-->
+<!--                            <span><i class="el-icon-full-screen"></i>全屏</span>-->
+<!--                        </a>-->
+<!--                        <a-->
+<!--                            v-else-->
+<!--                            href="javascript:;"-->
+<!--                            @click="exitFullScreen"-->
+<!--                        >-->
+<!--                            <span><i class="el-icon-full-screen"></i>退出全屏</span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
 </template>
 <script>

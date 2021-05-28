@@ -51,7 +51,7 @@ export default {
           subs: [
             {
               index: "tripleUpload",
-              title: "三元组上传",
+              title: "三元组添加",
             },
             {
               index: "tripleModify",

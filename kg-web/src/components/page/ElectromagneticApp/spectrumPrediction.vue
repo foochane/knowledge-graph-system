@@ -8,15 +8,20 @@
         <el-breadcrumb-item>频谱信息预测</el-breadcrumb-item>
       </el-breadcrumb>
     </div>
-    <div>
-      <div class="content-title">频谱时序预测</div>
-      <div id="myChart1" :style="{ width: '800px', height: '380px' }"></div>
+    <div class="schart">
+      <div class="content-title">频谱时序预测1</div>
+      <div id="myChart1" :style="{ width: '600px', height: '380px' }"></div>
     </div>
 
-    <div>
-      <div class="content-title">时间-频段占用</div>
-      <div id="myChart2" :style="{ width: '800px', height: '380px' }"></div>
+    <div class="schart">
+      <div class="content-title">频谱时序预测2</div>
+      <div id="myChart2" :style="{ width: '600px', height: '380px' }"></div>
     </div>
+
+      <div class="schart">
+          <div class="content-title">频谱时序预测3</div>
+          <div id="myChart3" :style="{ width: '600px', height: '380px' }"></div>
+      </div>
   </div>
 </template>
 
@@ -27,14 +32,16 @@ export default {
   mounted() {
     this.drawLine1();
     this.drawLine2();
+    this.drawLine3();
   },
   methods: {
     drawLine1() {
       // 基于准备好的dom，初始化echarts实例
       var myChart = echarts.init(document.getElementById("myChart1"));
       echarts.registerTransform(ecStat.transform.clustering);
-
-      this.$axios.get("/api/electromagnetic/predict", {page: this.cur_page}).then((res) => {
+        const url = '/static/predict1.json';
+        // const url = '/api/electromagnetic/predict';
+        this.$axios.get(url, {page: this.cur_page}).then((res) => {
           console.log(res.data);
           myChart.setOption(res.data);
 
@@ -46,12 +53,26 @@ export default {
       // 基于准备好的dom，初始化echarts实例
       var myChart = echarts.init(document.getElementById("myChart2"));
 
-      this.$axios.get("/api/band/list", {page: this.cur_page}).then((res) => {
-          console.log(res.data);
-          myChart.setOption(res.data);
+        const url = '/static/predict2.json';
+        // const url = '/api/electromagnetic/predict';
+        this.$axios.get(url, {page: this.cur_page}).then((res) => {
+            console.log(res.data);
+            myChart.setOption(res.data);
 
       });
     },
+      drawLine3() {
+          // 基于准备好的dom，初始化echarts实例
+          var myChart = echarts.init(document.getElementById("myChart3"));
+
+          const url = '/static/predict3.json';
+          // const url = '/api/electromagnetic/predict';
+          this.$axios.get(url, {page: this.cur_page}).then((res) => {
+              console.log(res.data);
+              myChart.setOption(res.data);
+
+          });
+      },
   },
 };
 </script>

@@ -9,6 +9,14 @@
 
 
         <div id="kg_container" class="container">
+
+            <el-form>
+                <el-form-item>
+                    <input type="text" ref="getValue" />
+                    <el-button type="primary">搜索</el-button>
+                </el-form-item>
+
+            </el-form>
             <KGBuilder pid="kg_container" />
         </div>
 
@@ -22,6 +30,7 @@
             KGBuilder,
         },
     }
+
 </script>
 <style>
     #kg_container {
